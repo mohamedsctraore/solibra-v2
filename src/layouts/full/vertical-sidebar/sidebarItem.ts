@@ -1,11 +1,11 @@
 import {
-    MenuIcon,
-    CircleIcon,
-    CircleOffIcon,
-    BrandChromeIcon,
-    MoodSmileIcon,
-    StarIcon,
-    AwardIcon
+    ChartLineIcon,
+    UserCircleIcon,
+    HomeIcon,
+    Message2Icon,
+    FilesIcon,
+    DatabaseIcon,
+
 } from 'vue-tabler-icons';
 
 export interface menu {
@@ -25,14 +25,39 @@ export interface menu {
 }
 
 const sidebarItem: menu[] = [
-    { header: 'Starterkit' },
+    { header: 'Tableau de Bord' },
     {
-        title: 'Sample Page',
-        icon: BrandChromeIcon,
+        title: 'Accueil',
+        icon: HomeIcon,
         to: '/'
     },
-    { header: 'Others' },
-    
+    { header: 'Messages' },
+    {
+        title: 'Campagnes',
+        icon: Message2Icon,
+        to: '/campagnes'
+    },
+    {
+        title: 'Categories',
+        icon: FilesIcon,
+        to: '/categories'
+    },
+    {
+        title: 'Statistiques',
+        icon: ChartLineIcon,
+        to: '/statistiques'
+    },
+    { header: 'Parametrages' },
+    {
+        title: 'Utilisateurs',
+        icon: UserCircleIcon,
+        to: '/utilisateurs'
+    },
+    {
+        title: 'Clients',
+        icon: DatabaseIcon,
+        to: '/clients'
+    },
 ];
 
 export default sidebarItem;
